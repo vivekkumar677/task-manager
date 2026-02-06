@@ -1,11 +1,25 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend of task manager application with CRUD operations using Express and MongoDB",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "Vivek Kumar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
