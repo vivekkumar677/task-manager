@@ -8,7 +8,7 @@ import TaskTable from "./TaskTable";
 import TaskModal from "./TaskModal.js";
 import { LoadingIndicator } from "./LoadingIndicator";
 
-const API_URL = "https://task-manager-phi-green.vercel.app";
+const API_URL = "https://task-manager-virid-two.vercel.app";
 
 export const TaskManager = () => {
     const [tasks, setTasks] = useState([]);
@@ -69,7 +69,6 @@ export const TaskManager = () => {
             deadline: taskData.deadline,
             });
         } else {
-            console.log("formData in handleSave", formData);
             await axios.post(`${API_URL}/api/tasks`, formData, {
             headers: { "Content-Type": "multipart/form-data" },
             });
